@@ -119,13 +119,13 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md p-6 flex flex-col gap-6 lg:hidden shadow-2xl animate-in fade-in slide-in-from-top-5">
+        <div className="absolute top-full left-0 w-full bg-white/70 backdrop-blur-md p-6 flex flex-col gap-6 lg:hidden shadow-2xl animate-in fade-in slide-in-from-top-5">
           {['Home', 'About Us', 'Services', 'Relations'].map((item) => (
             <Link
               key={item}
               href="#"
               onClick={() => setIsOpen(false)}
-              className="text-white text-lg font-medium border-b border-white/10 pb-3"
+              className="text-black text-lg font-medium border-b border-black/10 pb-3"
             >
               {item}
             </Link>
